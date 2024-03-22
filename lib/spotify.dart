@@ -1,6 +1,8 @@
 // ignore_for_file: prefer_const_constructors, prefer_const_literals_to_create_immutables, avoid_print, sized_box_for_whitespace, sort_child_properties_last
 
 //import 'package:flutter/cupertino.dart';
+import 'dart:ui';
+
 import 'package:flutter/material.dart';
 //import 'package:flutter/widgets.dart';
 
@@ -14,7 +16,7 @@ class Spotify extends StatefulWidget {
 class _SpotifyState extends State<Spotify> {
   @override
   Widget build(BuildContext context) {
-    return Scaffold(backgroundColor: Color.fromARGB(218, 0, 0, 0),
+    return Scaffold(backgroundColor: Color.fromARGB(239, 0, 0, 0),
       body:
       
       Padding(
@@ -23,7 +25,11 @@ class _SpotifyState extends State<Spotify> {
           Row(
             children: [
               CircleAvatar(backgroundImage: NetworkImage('https://avatars.githubusercontent.com/u/157578225?v=4'),),SizedBox(width: 8,),
-              ElevatedButton(onPressed: (){}, child: Text('All')),SizedBox(width: 8,),
+              ElevatedButton(onPressed: (){},
+               child: Text('All'),
+               
+               
+               ),SizedBox(width: 8,),
               ElevatedButton(onPressed: (){}, child: Text('Music'),),
             ],
           ),
@@ -89,7 +95,7 @@ class _SpotifyState extends State<Spotify> {
                  
               ],
             ),
-SizedBox(height: 8,),
+            SizedBox(height: 8,),
             //! Row R2 and R2.1
 
             Row(
@@ -152,7 +158,7 @@ SizedBox(height: 8,),
                 
               ],
             ),
-             SizedBox(height: 8,),
+            SizedBox(height: 8,),
 
              //! Row R3 and R3.1
 
@@ -216,7 +222,7 @@ SizedBox(height: 8,),
                  
               ],
             ),
-            SizedBox(height: 8,),
+              SizedBox(height: 8,),
 
             //! Row 4 and 4.1
 
@@ -280,6 +286,18 @@ SizedBox(height: 8,),
                 SizedBox(height: 8,), 
               ],
             ),
+        
+        SizedBox(height: 14,),
+        Row(
+          children: [
+            Text('Your Top Mixes',style: TextStyle(
+              fontSize: 20,
+              fontWeight: FontWeight.bold,
+              color: Colors.white),)
+          ],
+        ),
+        SizedBox(height: 14,),
+        
         ]
         ),
       ),
