@@ -1,7 +1,6 @@
-// ignore_for_file: prefer_const_constructors, dead_code
 import 'package:flutter/material.dart';
 import 'package:spotify/spotify.dart';
-
+import 'package:flutter_screenutil/flutter_screenutil.dart';
 
 void main() {
   runApp(const MyApp());
@@ -12,10 +11,15 @@ class MyApp extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return MaterialApp(
-      debugShowCheckedModeBanner: false,  
-      home: Spotify(),
-    
-    );
+    return 
+      ScreenUtilInit(
+        builder: (context, child) => 
+         MaterialApp(
+        debugShowCheckedModeBanner: false,  
+        home: Spotify(),
+        ),
+        designSize: Size(350, 640),
+        
+      );
   }
 }
