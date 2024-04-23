@@ -13,28 +13,27 @@ class Uni_Call extends StatelessWidget {
                       children: [
                         Container(
                           height: 60,
-                          width: 125, 
+                          width: 155, 
                           decoration: BoxDecoration(
                             color: const Color.fromARGB(174, 97, 97, 97),
-                            borderRadius: BorderRadius.circular(16)
+                            borderRadius: BorderRadius.circular(10)
                            ),
 
                            child: Center(
                             child: Padding(
-                              padding: const EdgeInsets.only(left: 45.0),
+                              padding: const EdgeInsets.only(left: 40.0),
                               child: Text(title,
                                 style: TextStyle(
-                                  
-                                  color: Colors.white),
+                                color: Colors.white),
                                 ),
-                            )
+                              )
                               ),
-                           ),
+                              ),
                          
                          Container(
                           
                           height: 60,
-                          width: 50,
+                          width: 55,
 
                           child:Image.network(link,fit: BoxFit.cover,), 
                         
