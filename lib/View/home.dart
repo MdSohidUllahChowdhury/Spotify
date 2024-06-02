@@ -1,23 +1,19 @@
 import 'package:flutter/material.dart';
-import 'package:spotify/container_call.dart';
-import 'package:spotify/library.dart';
-import 'package:spotify/uni_call.dart';
+import 'package:spotify/Controller/uni_call.dart';
+import 'package:spotify/Controller/container_call.dart';
 
-
-class Spotify extends StatefulWidget {
-  const Spotify({super.key});
+class SpotifyFeed extends StatefulWidget {
+  const SpotifyFeed({super.key});
 
   @override
-  State<Spotify> createState() => _SpotifyState();
+  State<SpotifyFeed> createState() => _SpotifyFeedState();
 }
 
-class _SpotifyState extends State<Spotify> {
+class _SpotifyFeedState extends State<SpotifyFeed> {
   @override
   Widget build(BuildContext context) {
-    return 
-    
-    Scaffold(
-    backgroundColor: Color.fromARGB(239, 0, 0, 0),
+    return Scaffold(
+      backgroundColor: Color.fromARGB(239, 0, 0, 0),
       
       body:
       SingleChildScrollView(
@@ -207,37 +203,6 @@ class _SpotifyState extends State<Spotify> {
           
         ),
       ),
-
-
-
-
-      //! Controller
-       bottomNavigationBar: BottomNavigationBar(
-        selectedFontSize: 8,
-        unselectedFontSize: 8,
-        iconSize: 20,
-        elevation: 0,
-        backgroundColor: Color.fromARGB(26, 54, 48, 48),
-        selectedItemColor: Colors.white,
-        unselectedItemColor: Colors.grey,
-        currentIndex: 0,
-        items: [
-        BottomNavigationBarItem(icon: Icon(Icons.home_sharp),label: 'Home'),
-        BottomNavigationBarItem(icon: Icon(Icons.search_outlined),label: 'Search'),
-        
-        BottomNavigationBarItem(
-          icon: InkWell(onTap: ()
-          {
-            Navigator.push(context,
-             MaterialPageRoute(builder: (context)=>Library()));
-          },
-          child: Icon(Icons.library_music_rounded)
-          ),
-          label: 'Library',
-          ),
-
-       ]
-       ),
     );
   }
 }

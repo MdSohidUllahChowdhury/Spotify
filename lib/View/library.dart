@@ -8,9 +8,7 @@ class Library extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(
-        title: (Text('Shakil')),
-      ),
+      backgroundColor: Colors.black45,
     );
   }
 }

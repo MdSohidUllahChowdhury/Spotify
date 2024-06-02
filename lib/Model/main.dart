@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
-import 'package:spotify/spotify.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
+import 'package:spotify/Model/pagecontroll.dart';
+
 
 void main() {
   runApp(const MyApp());
@@ -16,7 +17,7 @@ class MyApp extends StatelessWidget {
         builder: (context, child) => 
          MaterialApp(
         debugShowCheckedModeBanner: false,  
-        home: Spotify(),
+        home: PageControll()
         ),
         designSize: Size(350, 640),
         

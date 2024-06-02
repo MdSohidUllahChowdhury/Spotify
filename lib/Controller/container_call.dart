@@ -6,10 +6,9 @@ class Calling extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Container(
-                  color: Colors.amber,
-                  height: 120,
-                  width: 120,
-                );
-                
+      color: const Color.fromARGB(255, 223, 218, 205),
+      height: 120,
+      width: 120,
+    );
   }
 }
