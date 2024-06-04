@@ -17,7 +17,7 @@ class MyApp extends StatelessWidget {
         builder: (context, child) => 
          MaterialApp(
         debugShowCheckedModeBanner: false,  
-        home: PageControll()
+        home:PageControll(),
         ),
         designSize: Size(350, 640),
         
