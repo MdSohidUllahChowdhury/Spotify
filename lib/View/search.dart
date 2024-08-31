@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:spotify/Controller/uni_cardofsearch.dart';
-import 'package:spotify/Controller/uni_story_card.dart';
+import 'package:spotify/Widget/playlist_card_of_search.dart';
+import 'package:spotify/Widget/story_card_of_search.dart';
 
 class Search extends StatelessWidget {
   const Search({super.key});
@@ -18,7 +18,7 @@ class Search extends StatelessWidget {
           crossAxisAlignment: CrossAxisAlignment.start,
             children: [
               SizedBox(height: 10),
-                ListTile(
+              ListTile(
                 leading: CircleAvatar(
                     backgroundImage: 
                     NetworkImage('https://avatars.githubusercontent.com/u/157578225?v=4'),
@@ -31,7 +31,11 @@ class Search extends StatelessWidget {
                    color: Colors.white
                    ),) ,
               
-              trailing: Icon(Icons.camera_alt_outlined,color: Colors.white,size: 25,),
+              trailing: Icon(
+                Icons.camera_alt_outlined,
+                color: Colors.white,
+                size: 25
+                ),
                
               ),
               SizedBox(height: 10),
@@ -43,13 +47,16 @@ class Search extends StatelessWidget {
                 filled: true,
                 fillColor: Colors.white, 
                 border: OutlineInputBorder(
-                    borderRadius: BorderRadius.circular(6), gapPadding: 15,
+                    borderRadius: BorderRadius.circular(6), 
+                    gapPadding: 15,
                    ),
                 prefixIcon:Icon(Icons.search) ,
                 hintText: 'What do you want to listen to?',
-                hintStyle: TextStyle(color: const Color.fromARGB(255, 63, 61, 61)), 
-                          ),
-                        ),
+                hintStyle: TextStyle(
+                  color: const Color.fromARGB(255, 63, 61, 61)
+                  ), 
+                ),
+               ),
               ),
               SizedBox(height: 10),
               
@@ -57,7 +64,7 @@ class Search extends StatelessWidget {
               style:TextStyle(
                 fontWeight: FontWeight.bold,
                 color: Colors.white
-              ),
+               ),
               ),
               SizedBox(height: 10),
               StoryCard(),
@@ -66,19 +73,18 @@ class Search extends StatelessWidget {
               style:TextStyle(
                 fontWeight: FontWeight.bold,
                 color: Colors.white
+               ),
               ),
-              ),
-          
               SizedBox(height: 10),
-              SearchCard(color: Colors.brown,color2: Colors.blueGrey,),
+              PlaylistCard(color: Colors.brown,color2: Colors.blueGrey,),
               SizedBox(height: 9),
-              SearchCard(color: Colors.white,color2: Colors.purple,),
+              PlaylistCard(color: Colors.white,color2: Colors.purple,),
               SizedBox(height: 9),
-              SearchCard(color: Colors.greenAccent,color2: Colors.red,),
+              PlaylistCard(color: Colors.greenAccent,color2: Colors.red,),
               SizedBox(height: 9),
-              SearchCard(color: Colors.white,color2: Colors.purple,),
+              PlaylistCard(color: Colors.white,color2: Colors.purple,),
               SizedBox(height: 9),
-              SearchCard(color: Colors.greenAccent,color2: Colors.red,),
+              PlaylistCard(color: Colors.greenAccent,color2: Colors.red,),
             ],
           ),
         ),

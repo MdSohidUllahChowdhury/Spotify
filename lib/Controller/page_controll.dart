@@ -13,8 +13,8 @@ class PageControll extends StatefulWidget {
 
 class _PageControllState extends State<PageControll> {
  
-  int _onpageindex = 0; //? Where to index start 
-  final _pagedata =[
+  int onpageindex = 0; //? Where to index start 
+  final pagedata =[
      const SpotifyFeed(),
      const Search(),
      const Library() 
@@ -23,7 +23,7 @@ class _PageControllState extends State<PageControll> {
   Widget build(BuildContext context) {
     return Scaffold(
 
-      body: _pagedata[_onpageindex],
+      body: pagedata[onpageindex],
 
        bottomNavigationBar: 
        BottomNavigationBar(
@@ -32,10 +32,10 @@ class _PageControllState extends State<PageControll> {
         BottomNavigationBarItem(icon: Icon(Icons.search_outlined),label: 'Search'),
         BottomNavigationBarItem(icon: Icon(Icons.library_music_sharp),label: 'Library')
        ],
-        currentIndex: _onpageindex,
+        currentIndex: onpageindex,
          onTap: (gotopage){
           setState(() {
-            _onpageindex = gotopage;
+            onpageindex = gotopage;
           });
          },
 

@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
 
-class PlaylistCard extends StatelessWidget {
+class ListCard extends StatelessWidget {
  final String playlist_name;
-   PlaylistCard({super.key, required this.playlist_name});
+   ListCard({super.key, required this.playlist_name});
 
   @override
   Widget build(BuildContext context) {

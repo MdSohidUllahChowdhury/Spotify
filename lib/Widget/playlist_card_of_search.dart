@@ -1,9 +1,9 @@
 import 'package:flutter/material.dart';
 
-class SearchCard extends StatelessWidget {
+class PlaylistCard extends StatelessWidget {
   final Color color;
   final Color color2;
-   SearchCard({super.key, required this.color, required this.color2});
+   PlaylistCard({super.key, required this.color, required this.color2});
 
   @override
   Widget build(BuildContext context) {
