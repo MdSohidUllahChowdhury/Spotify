@@ -10,17 +10,15 @@ class SpotifyFeed extends StatelessWidget {
       backgroundColor: Color.fromARGB(239, 0, 0, 0),
       body: SingleChildScrollView(
         scrollDirection: Axis.vertical,
-        child: Padding(
-          padding: const EdgeInsets.all(10.0),
-          child: Column(
-            crossAxisAlignment: CrossAxisAlignment.start,
-            children: [
+        child: Padding(padding: const EdgeInsets.all(10.0),
+          child:Column(crossAxisAlignment: CrossAxisAlignment.start, 
+          children: [
             GlobalController.customAppBar(),
             SizedBox(height: 12),
             GlobalController.playBar(),
-            SizedBox(height:22),
+            SizedBox(height: 22),
             GlobalController.headingTextSection('Your Top Mix'),
-            SizedBox(height:14),
+            SizedBox(height: 14),
             GlobalController.yourTopMixes(),
             SizedBox(height: 22),
             GlobalController.headingTextSection('Recommended for You'),
@@ -30,7 +28,7 @@ class SpotifyFeed extends StatelessWidget {
             GlobalController.headingTextSection('Jump Back In'),
             SizedBox(height: 14),
             GlobalController.jumpBackIn(),
-          ]
+           ]
           ),
         ),
       ),

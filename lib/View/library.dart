@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:spotify/Widget/playlist_card_of_library.dart';
+import 'package:spotify/Widgets/playlist_card_of_library.dart';
 
 class Library extends StatelessWidget {
   const Library({super.key});
